@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- the head containing our css link, boothstrap link etc-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./resturant.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- used bg-dark to change color to black, then used navbar-dark to make our text turn white -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <!-- used text warning to make text yellow color -->
+          <a class="navbar-brand text-warning font-weight-bold" href="#"
+            >DeliciousCartels</a
+          >
+          <!-- our nav-bar button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <!-- used the # from our id tag for link within the same page -->
+                <a
+                  class="nav-link text-primary"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="home" class="hero">
+      <div class="background_image">
+        <!-- using boothstrap, text-warning for the color while text center to put text in center -->
+
+        <div>
+          <h1 class="hero_text text-center font-weight-bold font-italic">
+            Enjoy The Rich Taste And Aroma Of Delicious Foods
+          </h1>
+          <!-- used boothstrap to justify content to center -->
+        </div>
+        <div class="hero_button d-flex justify-content-center text-warning">
+          <!-- made a yellow background button with boothstrap -->
+          <button type="button " class="btn btn-lg btn-warning">
+            Enjoy Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- made grid with boothstrap -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-xs-12 col-md-6">
+            <!-- used the boothstrap card to put our content in a card form -->
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./pictures/SHAWARMA PICTURE.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Shawarma</h5>
+                <p class="card-text"></p>
+                <p class="shawarma_p">
+                  Shawarma meat is exceptionally flavorful and juicy, as it is
+                  marinated at length in spices like turmeric, cardamom,
+                  cinnamon, cloves, and garlic. While gyros usually come with
+                  the same combo of lettuce, tomatoes, and onions, shawarmas are
+                  often topped with a medley of pickled fruits and veggies
+                </p>
+                <!-- used the span to seperate the 30 dollars so I could color it green -->
+                <p>Price <span class="shawarma_price">$30.99</span></p>
+
+                <a href="#" class="btn btn-warning">Order Shawarma Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- used the boothstrap screen size, xs for really small screen should use 12 columns while md meduim should use 6 columns -->
+          <div class="col-xs-12 col-md-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./pictures/delicious chicken pics.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chicken</h5>
+                <p class="card-text"></p>
+                <p class="chicken_p">
+                  Delicious chicken in the slow cooker for anyone trying to cut
+                  back on red meat. Succulent. Juicy. Tender. You can try one
+                  now
+                </p>
+                <p>Price <span class="chicken_price">$69.99</span></p>
+                <a href="#" class="btn btn-warning">Order Chicken Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <div class="card">
+              <!-- our image tag -->
+              <img
+                class="card-img-top"
+                src="./pictures/BURGER PICTURE.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <!-- our title in the card body -->
+                <h5 class="card-title">Burger</h5>
+                <p class="card-text"></p>
+                <p class="burger_p">
+                  Classic Beef Cheeseburgers “Tasty, delicious, and has me
+                  craving more on the first bite.” to “Juicy, mouthwatering,
+                  tasty, and everything you’d ever want to savor. Buy Now.
+                </p>
+                <p>Price <span class="burger_price">$50.99</span></p>
+                <a href="#" class="btn btn-warning">Order Burger Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./pictures/pizza.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza</h5>
+                <p class="card-text"></p>
+                <!-- gave a class in the p tag so i can create custom css -->
+                <p class="pizza_p">
+                  It's hot, and succulent at the same time. It's truly a
+                  wonderful taste when you take that first bite, and all the
+                  flavors of the sauce, cheese, and seasoning go rushing towards
+                  your taste buds.
+                </p>
+                <p>Price <span class="pizza_price">$89.99</span></p>
+
+                <a href="#" class="btn btn-warning">Order Pizza Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <section id="about us" class="About_Us">
+      <div class="container-fluid">
+        <!-- gy for gap on y axis while gx for gap on x axis using boothstrap -->
+        <div class="row gy-5 gx-1 custom-margin">
+          <div class="col-xs-12 col-md-6">
+            <div class="card sm-w-8">
+              <img
+                class="card-img-top"
+                src="./pictures/restaurant pic.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  We learnt from the best, ourselves. Why eat at home when you
+                  can eat at Delicious cartels, too lazy to leave the house,
+                  well Delicious Cartels got you covered
+                </h5>
+                <p><a href="#" class="btn btn-warning">Order Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!-- our contact form -->
+    <section id="contact" class="contact">
+      <form style="width: 60%" class="name">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputname"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <!-- email input -->
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <!-- message input -->
+          <label for="exampleInputMessage">Message</label>
+          <input
+            type="Message"
+            class="form-control"
+            id="exampleInputMessage"
+            placeholder="Message"
+          />
+        </div>
+        <!-- submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <!-- our footer section -->
+      <p class="footer_text">
+        &copy;2024 DeliciousCartels. All rights reserved
+        <a href="mailto:hege@example.com">DeliciousCartels@gmail.com</a>
+      </p>
+      <p class="background_image_footer">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <!--adding font awesome icon for facebook and twitter -->
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </p>
+    </footer>
+    <!-- bootstrap script js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
